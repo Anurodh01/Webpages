@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .app
+        {
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100vw;
+        }
+        .main
+        {
+            background-color: #f1f1f1;
+            border: 1px solid #000;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            max-width: 420px;
+            min-height: 100vh;
+            /* position: absolute; */
+            width: 100vw;
+            /* margin: auto; */
+        }
+        .tab{
+            color: #dfd0d0;
+        }
+        .active
+        {
+            border-bottom: 3px solid white;
+            text-transform: uppercase;
+            color: white;
+        }
+        .tabs a:hover
+        {
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+    <div class="main">
+        <nav class="navbar bg-success">
+            <div class="container-fluid justify-content-start">
+              <button class="btn text-white"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg></button>
+              <span class="navbar-brand text-white ">Complaints & Suggestions</span>
+              <button class="btn text-white float-end"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg></button>
+            </div>
+          </nav>
+          <div class="bg-success pt-2 tabs" style="display: flex; flex-direction: row; justify-content: space-around;">
+            <div class="p-2 mb-1">
+            <a href="#" class="text-decoration-none active p-2 tab">Completed</a> 
+            </div>
+            <div class="p-2 mb-1">
+                <a href="#" class="text-decoration-none  p-2 tab">Wait</a> 
+            </div>
+        </div>
+        <div class="container mt-3">
+         <div class="mx-auto bg-light p-4 shadow p-3 mb-5 bg-body-tertiary rounded" style="width:96%">
+           <em style="color: blueviolet;">Not found....</em>
+         </div>
+        </div>
+
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
